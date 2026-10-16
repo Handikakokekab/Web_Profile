@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Profile</title>
+  
+  <!-- Menghubungkan ke file CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav>
+      <div class="logo">Handika</div>
+      <ul class="nav-links">
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#keahlian" class="active">Keahlian</a></li>
+        <li><a href="#karya">Karya</a></li>
+        <li><a href="#perjalanan">Perjalanan</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="search-btn" aria-label="Cari">🔍</button>
+        <a href="#kontak" class="btn-primary">Sapa aku</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <main class="hero">
+    <!-- Kiri: Teks & Tombol -->
+    <div class="hero-text-content">
+      <div class="hero-badge">• Handika — Frontend & UI/UX</div>
+      <h1 class="hero-title">
+        Merangkai kode program <span>TANGGUH</span> yang nyaman dipakai.
+      </h1>
+      <p class="hero-desc">
+        Seribu tahun membantu negara cahaya melawan berbagai ancaman di seluruh alam semesta demi kedamaian.
+      </p>
+      <div class="hero-buttons">
+        <a href="#karya" class="btn-dark">Jelajahi karya</a>
+        <a href="#kontak" class="btn-outline">Sapa aku</a>
+      </div>
+    </div>
+
+    <!-- Kanan: Gambar & Aksesoris -->
+    <div class="hero-image-wrapper">
+      <div class="image-card">
+        <!-- Ganti URL gambar di bawah dengan foto kamu -->
+        <img src="G-one.jpg" alt="Permen">
+      </div>
+
+      <!-- Badge Teks Melingkar Berputar -->
+      <div class="spinning-badge">
+        <div class="spinning-text">
+          <svg viewBox="0 0 100 100">
+            <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" />
+            <text><textPath href="#circlePath">• Have a Good Day • Always Smile</textPath></text>
+          </svg>
+        </div>
+        <div class="center-plus">+</div>
+      </div>
+
+      <!-- Kartu Rating -->
+      <div class="rating-card">
+        <span>Overall Rating</span>
+        <strong>102</strong>
+      </div>
+    </div>
+
+    <!-- Info Footer Hero -->
+    <div class="hero-footer-info">
+      <div>SURAKARTA — <span id="live-time">22:30 WIB</span></div>
+      <div>Lets Scroll :) </div>
+      <div>SCROLL KE BAWAH ↓</div>
+      <div>PORTOFOLIO 2026</div>
+    </div>
+  </main>
+
+  <!-- RUNNING TEXT BANNER -->
+  <div class="marquee-container">
+    <div class="marquee-content">
+      <div class="marquee-item">SISTEM DESAIN</div>
+      <div class="marquee-item">REACT</div>
+      <div class="marquee-item">MOTION</div>
+      <div class="marquee-item">BRANDING</div>
+      <div class="marquee-item">AKSESIBILITAS</div>
+      <div class="marquee-item">RISET</div>
+      <!-- Duplikasi isi agar animasi tidak terputus -->
+      <div class="marquee-item">SISTEM DESAIN</div>
+      <div class="marquee-item">REACT</div>
+      <div class="marquee-item">MOTION</div>
+      <div class="marquee-item">BRANDING</div>
+      <div class="marquee-item">AKSESIBILITAS</div>
+      <div class="marquee-item">RISET</div>
+    </div>
+  </div>
+  
+  <!-- SECTION TENTANG AKU -->
+  <section id="tentang" class="about-section">
+    <div class="about-container">
+      
+      <!-- Sub-badge -->
+      <div class="section-badge">
+        <span class="badge-number">1</span>
+        <span>TENTANG AKU</span>
+      </div>
+
+      <!-- Teks Pernyataan/Manifesto -->
+      <h2 class="about-manifesto">
+        AKU PERCAYA DESAIN TERBAIK NYARIS TAK TERLIHAT.
+        IA HANYA MEMBUAT SEGALANYA TERASA MUDAH, HANGAT, 
+        DAN SEDIKIT MENYENANGKAN. AKU MULAI DARI MENULIS KODE, LALU JATUH CINTA PADA MANUSIA DI BALIK LAYAR.
+        SEKARANG AKU BEKERJA DI ANTARA KEDUANYA, DARI RISET SAMPAI IMPLEMENTASI, SUPAYA YANG DIRANCANG SAMA PERSIS DENGAN YANG DIRILIS.
+      </h2>
+
+      <!-- Bento Cards -->
+      <div class="bento-grid">
+        <div class="bento-card card-white">
+          <span class="card-label">BAHAN BAKAR</span>
+          <p class="card-title">ES TEH, EMPAT GELAS SEHARI</p>
+        </div>
+
+        <div class="bento-card card-blue">
+          <span class="card-label">PLAYLIST</span>
+          <p class="card-title">JK-POP DAN LO-FI SAAT NGODING</p>
+        </div>
+
+        <div class="bento-card card-light">
+          <span class="card-label">LAGI DIPELAJARI</span>
+          <p class="card-title">MOBILE, SERVER, DAN FOTOGRAFI</p>
+        </div>
+      </div>
+
+      <!-- Statistik Grid -->
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">0</div>
+          <div class="stat-label">TAHUN BERKARYA</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">0</div>
+          <div class="stat-label">PROYEK DIRILIS</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">0</div>
+          <div class="stat-label">PENGGUNA TERJANGKAU</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">1</div>
+          <div class="stat-label">PENGHARGAAN</div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+   <!-- SECTION KEAHLIAN -->
+  <section id="keahlian" class="skills-section">
+    <div class="skills-container">
+      
+      <!-- Sub-badge Header -->
+      <div class="section-badge">
+        <span class="badge-number">2</span>
+        <span>KEAHLIAN</span>
+      </div>
+
+      <!-- Judul Utama -->
+      <h2 class="skills-title">
+        ENAM HAL YANG <span>KUKERJAKAN</span> DENGAN SEPENUH HATI.
+      </h2>
+
+      <!-- Content Grid 2 Kolom -->
+      <div class="skills-grid">
+        
+        <!-- Kolom Kiri: List Interactive -->
+        <div class="skills-list">
+          <div class="skill-item" data-index="1" data-title="DESAIN PRODUK & UI" data-desc="Merancang antarmuka web modern, clean, dan responsif dari sketsa Figma hingga siap dieksekusi menjadi kode." data-tags="Figma, UI/UX, Wireframing">
+            <span class="skill-num">01</span>
+            <span class="skill-name">DESAIN PRODUK</span>
+          </div>
+
+          <div class="skill-item active" data-index="2" data-title="SISTEM DESAIN" data-desc="Pustaka komponen, pola warna, dan token yang membuat tampilan web konsisten, rapi, dan mudah dikembangkan." data-tags="Token, Komponen, Dokumentasi">
+            <span class="skill-num">02</span>
+            <span class="skill-name">SISTEM DESAIN</span>
+            <span class="skill-arrow">→</span>
+          </div>
+
+          <div class="skill-item" data-index="3" data-title="FRONT-END DEVELOPMENT" data-desc="Membangun tampilan web yang cepat dan presisi menggunakan HTML, CSS, JavaScript, serta standar web modern." data-tags="HTML5, CSS Flex/Grid, JavaScript">
+            <span class="skill-num">03</span>
+            <span class="skill-name">FRONT-END</span>
+          </div>
+
+          <div class="skill-item" data-index="4" data-title="PEMROGRAMAN C++" data-desc="Eksplorasi logika dasar, struktur data, dan mekanika sintaks C++ untuk mengasah pemecahan masalah." data-tags="C++, Algorithm, Logic">
+            <span class="skill-num">04</span>
+            <span class="skill-name">C++ & LOGIKA</span>
+          </div>
+
+          <div class="skill-item" data-index="5" data-title="PENGOLAHAN DATA EXCEL" data-desc="Mengorganisir dan menyusun laporan data secara rapi menggunakan formula dan visualisasi tabel yang terstruktur." data-tags="Excel, Analytics, Spreadsheet">
+            <span class="skill-num">05</span>
+            <span class="skill-name">DATA & EXCEL</span>
+          </div>
+
+          <div class="skill-item" data-index="6" data-title="AKSESIBILITAS & WEB RESPONSIVE" data-desc="Memastikan web nyaman diakses di berbagai perangkat, baik HP, tablet, maupun layar monitor laptop." data-tags="Responsive, Mobile-First, Usability">
+            <span class="skill-num">06</span>
+            <span class="skill-name">AKSESIBILITAS</span>
+          </div>
+        </div>
+
+        <!-- Kolom Kanan: Card Preview -->
+        <div class="skill-preview-card">
+          <div class="preview-bg-shape"></div>
+          <div class="preview-content">
+            <span class="preview-counter" id="preview-counter">02 / 06</span>
+            <h3 class="preview-title" id="preview-title">SISTEM DESAIN</h3>
+            <p class="preview-desc" id="preview-desc">
+              Pustaka komponen dan token yang membuat tim bergerak dengan cepat dan terstruktur.
+            </p>
+            <div class="preview-tags" id="preview-tags">
+              <span class="tag">Token</span>
+              <span class="tag">Komponen</span>
+              <span class="tag">Dokumentasi</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section> 
+  
+   <!-- SECTION KARYA PILIHAN -->
+  <section id="karya" class="projects-section">
+    <div class="projects-container">
+      
+      <!-- Sub-badge Header -->
+      <div class="section-badge">
+        <span class="badge-number">3</span>
+        <span>KARYA PILIHAN</span>
+      </div>
+
+      <!-- Judul Section -->
+      <h2 class="projects-title">
+        EMPAT CERITA, <span>SATU</span> BENANG MERAH.
+      </h2>
+      <p class="projects-subtitle">
+        Arahkan kursor ke panel untuk membukanya.<br>
+        Klik untuk membaca studi kasus lengkap.
+      </p>
+
+      <!-- Accordion Grid Cards -->
+      <div class="projects-accordion">
+        
+        <!-- Card 1 -->
+        <div class="project-card card-1">
+          <div class="card-header">
+            <span class="project-num">01 — 2026</span>
+          </div>
+          <div class="card-vertical-title">TABUNGKU</div>
+          <div class="card-active-content">
+            <span class="project-tag">FINTECH & TABUNGAN</span>
+            <h3 class="project-name">TABUNGKU</h3>
+            <p class="project-desc">Aplikasi manajemen keuangan pribadi yang membantu mengatur target tabungan harian secara otomatis.</p>
+            <a href="#" class="project-link-btn">↗</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="project-card card-2">
+          <div class="card-header">
+            <span class="project-num">02 — 2025</span>
+          </div>
+          <div class="card-vertical-title">KOPI NUSA</div>
+          <div class="card-active-content">
+            <span class="project-tag">E-COMMERCE & BRANDING</span>
+            <h3 class="project-name">KOPI NUSA</h3>
+            <p class="project-desc">Platform pemesanan biji kopi lokal Nusantara langsung dari petani dengan sistem pengiriman cepat.</p>
+            <a href="#" class="project-link-btn">↗</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="project-card card-3">
+          <div class="card-header">
+            <span class="project-num">03 — 2025</span>
+          </div>
+          <div class="card-vertical-title">ATLAS DESAIN</div>
+          <div class="card-active-content">
+            <span class="project-tag">DESIGN SYSTEM</span>
+            <h3 class="project-name">ATLAS DESAIN</h3>
+            <p class="project-desc">Pustaka komponen UI dan petunjuk gaya visual interaktif untuk mempercepat pengembangan produk digital.</p>
+            <a href="#" class="project-link-btn">↗</a>
+          </div>
+        </div>
+
+        <!-- Card 4 (Active / Open by Default) -->
+        <div class="project-card card-4 active">
+          <div class="card-header">
+            <span class="project-num">04 — 2024</span>
+          </div>
+          <div class="card-vertical-title">RUMAH SEHAT</div>
+          <div class="card-active-content">
+            <span class="project-tag">PLATFORM TELEMEDIS</span>
+            <h3 class="project-name">RUMAH SEHAT</h3>
+            <p class="project-desc">Berobat tanpa antre, tanpa cemas.</p>
+            <a href="#" class="project-link-btn">↗</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+<script src="script.js"></script>
+</body>
+</html>
