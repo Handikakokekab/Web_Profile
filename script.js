@@ -58,3 +58,55 @@ projectCards.forEach(card => {
     card.classList.add('active');
   });
 });
+
+
+// 1. Fitur Klik untuk Salin Email
+const copyEmailBtn = document.getElementById('copy-email-btn');
+const emailText = document.getElementById('email-text');
+const copyStatus = document.getElementById('copy-status');
+
+if (copyEmailBtn) {
+  copyEmailBtn.addEventListener('click', () => {
+    navigator.clipboard.writeText(emailText.innerText.toLowerCase());
+    const originalNote = copyStatus.innerText;
+    copyStatus.innerHTML = `<strong style="color: #2563eb;">✓ Email berhasil disalin ke clipboard!</strong>`;
+    setTimeout(() => {
+      copyStatus.innerText = originalNote;
+    }, 3000);
+  });
+}
+
+// 2. Pilihan Topik pada Form Kontak
+const topicPills = document.querySelectorAll('.topic-pill');
+topicPills.forEach(pill => {
+  pill.addEventListener('click', () => {
+    topicPills.forEach(p => {
+      p.classList.remove('active');
+      p.innerText = p.getAttribute('data-topic');
+    });
+    pill.classList.add('active');
+    pill.innerText = `✓ ${pill.getAttribute('data-topic')}`;
+  });
+});
+
+// 3. Slider Perkiraan Anggaran Realtime
+const budgetSlider = document.getElementById('budget-slider');
+const budgetDisplay = document.getElementById('budget-display');
+
+if (budgetSlider) {
+  budgetSlider.addEventListener('input', () => {
+    budgetDisplay.innerText = `RP ${budgetSlider.value} JUTA`;
+  });
+}
+
+// 4. Simulasi Kirim Pesan Form
+const projectForm = document.getElementById('project-form');
+if (projectForm) {
+  projectForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const senderName = document.getElementById('sender-name').value;
+    alert(`Terima kasih ${senderName}! Pesan dan ide proyekmu sudah terkirim.`);
+    projectForm.reset();
+    budgetDisplay.innerText = 'RP 5 JUTA';
+  });
+}
